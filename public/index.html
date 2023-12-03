@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
+      .height-carousel {
+        height: 410;
+      }
       .width-divider {
         width: 600px;
       }
@@ -34,7 +37,11 @@
   </head>
   <body>
     <div class="main-section flex flex-row justify-center mt-24">
-      <div class="photo bg-gray-800 p-4 mr-10">1</div>
+      <div class="photo bg-gray-800 mr-10 w-80 height-carousel">
+        <div class="carousel w-80 h-80 flex flex-col items-center justify-center">
+          
+        </div>
+      </div>
       <div class="text p-4 ml-10 flex flex-col text-yellow-950">
         <div class="nama-barang font-bold text-5xl"><h1>SANSBERG</h1></div>
         <div class="jenis-ukuran-barang flex flex-row mt-2.5">
@@ -75,8 +82,8 @@
       </div>
     </div>
 
-    <div class="comment-section flex flex-row justify-center mt-24">
-      <div class="ukuran-comment width-comment flex flex-row">
+    <div class="comment-section flex flex-row justify-center mt-24 items-center">
+      <div class="ukuran-comment width-comment flex flex-row justify-center">
         <div class="left w-32 mr-10 flex flex-col">
           <div class="rata-rating flex flex-row items-center justify-evenly mb-1">
             <img src="image/slash-star.png" alt="" class="mr-3" />
