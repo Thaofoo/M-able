@@ -6,12 +6,21 @@
     <title>Checkout</title>
     <link rel="stylesheet" href="css/style.css" />
     <style>
-      
+        .bg-mable {
+            background-color: #4D4239
+        }
+
+        .text-xxs {
+            font-size: 0.675rem;
+            line-height: 0.675rem;
+        }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xxx" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/3108108d3f.js" crossorigin="anonymous"></script>
   </head>
   <body class="font-poppins">
+
     <!-- List Barang Checkout -->
     <div class="mt-16 ">
         <!-- List Header -->
@@ -29,13 +38,16 @@
                 </div>
                 <div class="flex flex-col justify-between w-96">
                     <div>
+                        <!-- Nama dan Deskripsi -->
                         <div class="text-xl font-medium">NAMA PRODUK</div>
                         <div class="text-gray-600 text-xl font-light">deskripsi singkat produk</div>
                     </div>
                     <div>
+                        <!-- Price -->
                         <div class="text-2xl font-semibold flex items-start">
                             <span class="text-sm font-normal mr-0.5">Rp</span>640.000
                         </div>
+                        <!-- Berat -->
                         <div class="text-gray-600 text-l font-light">Berat paket: 29.7kg</div>
                         <div class="text-gray-600 text-l font-light">Total berat paket: 29.7kg</div>
                     </div>
@@ -58,10 +70,14 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="flex flex-col items-end">
+                    <!-- Price -->
                     <div class="text-3xl font-semibold flex items-start w-40 text-left mt-3">
                         <span class="text-base font-normal mr-0.5">Rp</span>640.000
                     </div>
+                    <!-- Icons -->
                     <div class="flex justify-between w-16 items-center mt-5 mr-6">
                         <div>
                             <img src="/public/image/checkout/icon_love.svg" alt="">
@@ -74,6 +90,88 @@
             </div>
         </div>
 
+    </div>
+
+    <!-- Metode Pengantaran -->
+    <div class="mx-28">
+        <div class="text-center text-2xl font-semibold mt-14 mb-5">
+            Metode Pengantaran
+        </div>
+            <div class="text-base font-light text-gray-600 mb-1.5">
+                Pilih Alamat
+            </div>
+            <div class="border border-gray-800 rounded-xl py-6 px-16 flex items-center justify-between">
+                <!-- Left -->
+                <div class="text-base font-semibold w-60">
+                    <div>
+                        Nathania Erlinda Putri
+                    </div>
+                    <div>
+                        (+62) 821 1163 3025
+                    </div>
+                
+                </div>
+                <!-- Middle -->
+                <div class="mr-10 text-gray-600">
+                    Jl. Mulyorejo Indah I No.4, Mulyorejo, Kec. Tambaksari, Surabaya, Jawa Timur
+                    JAWA TIMUR - ID 60114
+                </div>
+
+                <!-- Right -->
+                <div class="flex text-xxs font-light text-center w-32 justify-between">
+                    <div class="w-14 h-6 border border-gray-600 rounded-full text-gray-600 flex justify-center items-center">
+                        Utama
+                    </div>
+                    <div class="w-14 h-6 bg-mable rounded-full text-white align-middle flex justify-center items-center">
+                        Ubah
+                    </div>
+                </div>
+            </div>
+
+            <!-- Metode Pengiriman -->
+            <div class="flex justify-between mt-6">
+                <!-- Left -->
+                <div class="border border-gray-300 rounded-xl py-6 px-10 flex items-center justify-start w-1/2 mr-3">
+                    <img class="mr-6" src="/public/image/checkout/icon_delivery.svg" alt="">
+                    <div>
+                        <div class="font-semibold text-base">
+                            Delivery
+                        </div>
+                        <div class="font-normal text-base text-gray-500">
+                            Tersedia peniriman Regular & Same day
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="border border-gray-300 rounded-xl py-6 px-10 flex items-center justify-start w-1/2 ml-3">
+                    <img class="mr-6" src="/public/image/checkout/icon_pickup.svg" alt="">
+                    <div>
+                        <div class="flex">
+                            <div class="font-semibold text-base">
+                                Pick-up Point
+                            </div>
+                            <div class="bg-mable text-xxs py-1 px-2 rounded text-white font-light my-auto ml-3">
+                                GRATIS ONGKIR
+                            </div>
+                        </div>
+                        <div class="font-normal text-base text-gray-500">
+                            Ambil di pick-up point terdekat
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div>
+    
+        </div>
+        <div>
+    
+        </div>
+    </div>
+
+    <!-- Rekomendasi -->
+    <div class="text-left text-2xl font-semibold mt-14 mb-5 mx-28">
+        Direkomendasikan Untuk Anda
     </div>
 
   </body>
